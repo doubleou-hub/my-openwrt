@@ -30,6 +30,8 @@ env:
 
 jobs:
   build:
+  permissions:  # ← 添加这3行 ↓
+      contents: write
     runs-on: ubuntu-22.04
 
     steps:
