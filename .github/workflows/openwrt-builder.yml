@@ -32,6 +32,7 @@ jobs:
   build:
   permissions:  # ← 添加这3行 ↓
       contents: write
+       actions: write       # 🔥 新增：允许创建/管理 Actions（关键！）
     runs-on: ubuntu-22.04
 
     steps:
